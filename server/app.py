@@ -11,7 +11,7 @@ from sqlalchemy.orm import sessionmaker, Session
 from typing import List
 
 app = FastAPI()
-DATABASE_URL = "mysql+pymysql://root:zyt622312@127.0.0.1:3306/summars?charset=utf8mb4"
+DATABASE_URL = "mysql+pymysql://root:zyt622312@127.0.0.1:3306/summar?charset=utf8mb4"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
